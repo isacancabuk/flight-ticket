@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Flight Ticket</title>
+        
+    </head>
+    <body onload="loginNameHandler()">
+       <nav>
+            <div class="brand-name">
+                <img src="image/brandicon.svg" alt="">
+                <h1>AIOLOS</h1>
+            </div>
+            <div>
+                <a href="login.html" id="login">LOGIN</a>
+                <a href="#">SIGN UP</a>
+            </div>
+       </nav>
+        <main>
+            <div class="bg-image">
+                <img src="https://images.unsplash.com/photo-1697229299093-c920ab53bfb1?q=80&w=3536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            </div>
+            <div class="search-flight">
+                <div class="fare">
+                    <button>ONE WAY</button>
+                    <button>RETURN</button>
+                </div>
+                <div class="choices-up">
+                    <div class="from">
+                        <label>FROM</label>
+                        <select name="from" id="from"></select>
+                    </div>
+                    <div class="to">
+                        <label>TO</label>
+                        <select name="to" id="to"></select>
+                    </div>
+                    <div class="passengers">
+                        <label>PASSENGERS</label>
+                        <div class="pbuttons">
+                            <button id="dec" onclick="decPassenger()">-</button>
+                        <p id="counter">1</p>
+                        <button id="inc" onclick="incPassenger()">+</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="choices-down">
+                    <div class="depart">
+                        <label>DEPART</label>
+                        <input type="date" id="depart-date">
+                    </div>
+                    <div class="return">
+                        <label>RETURN</label>
+                        <input type="date" id="return-date">
+                    </div>
+                    <div class="find-flights">
+                        <a onclick="flightHandler()">Find Flights</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="top">
+                <a href="#">Contact</a>
+                <a href="#">Privacy & Cookie Policy</a>
+                <a href="#">Website Security</a>
+                <a href="#">Sustainability</a>
+                <a href="#">Costumer Commitment</a>
+            </div>
+            <div class="bottom">
+                <p>Aiolos Airlines Copyright © Since 1632</p>
+            </div>
+        </footer>
+<script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Flight Ticket</title>
+</head>
+<body>
+    <nav>
+        <div class="brand-name">
+            <img src="image/brandicon.svg">
+            <h1>AIOLOS</h1>
+        </div>
+        <div>
+            <a href="#" id="login">LOGIN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>Please Login</h1>
+        <form>
+            <div class="formControl">
+                <input type="text" required id="tckn">
+                <label>TCKN</label>
+            </div>
+            <div class="formControl">
+                <input type="password" required id="password">
+                <label>Password</label>
+            </div>
+            <button type="button" class="btn" onclick="submitHandler()">Login</button>
+            <p class="text">Don't have an account? <a href="#">Register</a></p>
+        </form>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="top">
+            <a href="#">Contact</a>
+            <a href="#">Privacy & Cookie Policy</a>
+            <a href="#">Website Security</a>
+            <a href="#">Sustainability</a>
+            <a href="#">Costumer Commitment</a>
+        </div>
+        <div class="bottom">
+            <p>Aiolos Airlines Copyright © </p>
+        </div>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>
