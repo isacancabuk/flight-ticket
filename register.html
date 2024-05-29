@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Flight Ticket</title>
+</head>
+<body>
+    <nav>
+        <div class="brand-name">
+            <img src="image/brandicon.svg">
+            <h1>AIOLOS</h1>
+        </div>
+        <div>
+            <a href="login.html" id="login">LOGIN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+    </nav>
+
+    <main>
+        
+        <div class="container">
+            <h1>Please Sign Up</h1>
+        <form>
+            <div class="formRow">
+                <div class="formControl">
+                    <input type="text" required id="fullname">
+                    <label>Name</label>
+                </div>
+                <div class="formControl">
+                    <input type="text" required id="gender">
+                    <label>Gender</label>
+                </div>
+            </div>
+            <div class="formRow">
+                <div class="formControl">
+                    <input type="text" required id="age">
+                    <label>Age</label>
+                </div>
+                <div class="formControl">
+                    <input type="text" required id="nation">
+                    <label>Nation</label>
+                </div>
+            </div>
+            <div class="formRow">
+                <div class="formControl">
+                    <input type="text" required id="tckn">
+                    <label>TCKN</label>
+                </div>
+                <div class="formControl">
+                    <input type="password" required id="password">
+                    <label>Password</label>
+                </div>
+            </div>
+            
+            <button type="button" class="btn" onclick="registerHandler()">Sign Up</button>
+            <p class="text">Have an account? <a href="login.html">Login</a></p>
+        </form>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="top">
+            <a href="#">Contact</a>
+            <a href="#">Privacy & Cookie Policy</a>
+            <a href="#">Website Security</a>
+            <a href="#">Sustainability</a>
+            <a href="#">Costumer Commitment</a>
+        </div>
+        <div class="bottom">
+            <p>Aiolos Airlines Copyright © </p>
+        </div>
+    </footer>
+    <script src="register.js"></script>
+</body>
+</html>

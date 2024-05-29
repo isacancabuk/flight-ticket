@@ -3,9 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-    
+    <nav>
+        <div class="brand-name">
+            <img src="image/brandicon.svg">
+            <h1>AIOLOS</h1>
+        </div>
+        <div>
+            <a href="#" id="login">LOGIN</a>
+            <a href="#" onclick="logoutHandler()">SIGN UP</a>
+        </div>
+    </nav>
+
+<main>
+    <div class="container">
+        <div class="personal-info">
+            <div class="info-row">
+                <div class="info-row-inside">
+                    <p>Name:</p>
+                    <p id="nameData">Can</p>
+                </div>
+                <div class="info-row-inside">
+                    <p>Gender:</p>
+                    <p id="genderData">Male</p>
+                </div>
+            </div>
+            <div class="info-row">
+                <div class="info-row-inside">
+                    <p>Age:</p>
+                    <p id="ageData">30</p>
+                </div>
+                <div class="info-row-inside">
+                    <p>Nation:</p>
+                    <p id="nationData">Turkey</p>
+                </div>
+            </div>
+            <div class="info-row">
+                <div class="info-row-inside">
+                    <p>TCKN:</p>
+                    <p id="tcknData">123</p>
+                </div>
+            </div>
+            <button>LOG OUT</button>
+        </div>
+        <div class="flights">
+            <div class="flight">
+                <div class="flight-row1">
+                    <p>Istanbul</p>
+                    <p>Ankara</p>
+                </div>
+                <div class="flight-row">
+                    <p>19.00</p>
+                </div>
+                <div class="flight-row">
+                    <p>2C</p>
+                </div>
+            </div>
+            <div class="flight">
+                <div class="flight-row1">
+                    <p>Istanbul</p>
+                    <p>Ankara</p>
+                </div>
+                <div class="flight-row">
+                    <p>19.00</p>
+                </div>
+                <div class="flight-row">
+                    <p>2C</p>
+                </div>
+            </div>
+            <div class="flight">
+                <div class="flight-row1">
+                    <p>Istanbul</p>
+                    <p>Ankara</p>
+                </div>
+                <div class="flight-row">
+                    <p>19.00</p>
+                </div>
+                <div class="flight-row">
+                    <p>2C</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer>
+        <div class="top">
+            <a href="#">Contact</a>
+            <a href="#">Privacy & Cookie Policy</a>
+            <a href="#">Website Security</a>
+            <a href="#">Sustainability</a>
+            <a href="#">Costumer Commitment</a>
+        </div>
+        <div class="bottom">
+            <p>Aiolos Airlines Copyright © </p>
+        </div>
+    </footer>
+    <script src="profile.js"></script>
 </body>
 </html>
